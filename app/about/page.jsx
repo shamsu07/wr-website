@@ -1,4 +1,11 @@
-function About(){
+import Image from "next/image";
+import aboutBanner from '../../public/images/about/about-banner.svg';
+import globalCompany from '../../public/images/about/global-company.svg';
+import ourPeople from '../../public/images/about/our-people.svg';
+import ourPlatform from '../../public/images/about/our-platform.svg';
+import ourPractices from '../../public/images/about/our-practices.svg';
+
+export default function About(){
     return(
         <>
   <meta charSet="utf-8" />
@@ -25,41 +32,7 @@ function About(){
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
   {/* Template Main CSS File */}
   <link href="assets/css/style.css" rel="stylesheet" />
-  {/* ======= Header ======= */}
-  <header id="header" className="d-flex align-items-center">
-    <div className="container d-flex justify-content-between">
-      <div className="logo">
-        {/*   <h1 class="text-light"><a href="index.html"> </a></h1>*/}
-        {/* Uncomment below if you prefer to use an image logo */}
-        <a href="index.html">
-          <img src="images/logo.svg" alt="" className="img-fluid" />
-        </a>
-      </div>
-      <nav id="navbar" className="navbar">
-        <ul>
-          <li>
-            <a href="about.html">ABOUT US</a>
-          </li>
-          <li>
-            <a href="partner.html">
-              <span>PARTNER WITH US</span>
-            </a>
-          </li>
-          <li>
-            <a href="products.html">OUR PRODUCTS</a>
-          </li>
-          <li>
-            <a href="contact.html">
-              <span>CONTACT US</span>
-            </a>{" "}
-          </li>
-        </ul>
-        <i className="bi bi-list mobile-nav-toggle" />
-      </nav>
-      {/* .navbar */}
-    </div>
-  </header>
-  {/* End Header */}
+
   <main id="main">
     {/* ======= About Us Section ======= */}
     <section id="about-us" className="about-us">
@@ -67,7 +40,7 @@ function About(){
         className="col-xl-12 d-flex align-items-stretch justify-content-center justify-content-lg-start"
         data-aos="fade-right"
       >
-        <img src="images/02AboutWealthRight_Banner.svg" alt="" />
+        <Image src={aboutBanner} alt="Illustration drawing." />
       </div>
       <div className="container">
         <div className="row no-gutters">
@@ -89,10 +62,10 @@ function About(){
         <div className="row">
           <div className="col-lg-6" data-aos="fade-up">
             <div className="testimonial-item">
-              <img
-                src="images/02_About_ICON1_Global.svg"
+              <Image
+                src={globalCompany}
                 className="testimonial-img"
-                alt=""
+                alt="Illustration."
               />
               <h3>Global company</h3>
               <h4>fulfilling financial dreams</h4>
@@ -111,10 +84,10 @@ function About(){
           </div>
           <div className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
             <div className="testimonial-item mt-4 mt-lg-0">
-              <img
-                src="images/02_About_ICON2_OurPeople.svg"
+              <Image
+                src={ourPeople}
                 className="testimonial-img"
-                alt=""
+                alt="Illustration"
               />
               <h3>Our people</h3>
               <h4>are our key to understand clients needs</h4>
@@ -133,10 +106,10 @@ function About(){
           </div>
           <div className="col-lg-6" data-aos="fade-up" data-aos-delay={200}>
             <div className="testimonial-item mt-4">
-              <img
-                src="images/02_About_ICON3_OurPractices.svg"
+              <Image
+                src={ourPractices}
                 className="testimonial-img"
-                alt=""
+                alt="illustration"
               />
               <h3>Our practices help us deliver on our promise</h3>
               <p>
@@ -151,10 +124,10 @@ function About(){
           </div>
           <div className="col-lg-6" data-aos="fade-up" data-aos-delay={300}>
             <div className="testimonial-item mt-4">
-              <img
-                src="images/02_About_ICON4_Platform.svg"
+              <Image
+                src={ourPlatform}
                 className="testimonial-img"
-                alt=""
+                alt="Illustration"
               />
               <h3>Our platform brings world class capabilities to bear</h3>
               <p>
@@ -173,122 +146,6 @@ function About(){
     </section>
   </main>
   {/* End #main */}
-  {/* ======= Footer ======= */}
-  <footer id="footer">
-    <div className="footer-top">
-      <div className="container" style={{ borderBottom: "1px solid #9cbec8" }}>
-        <div className="row">
-          <div className="col-lg-2 col-md-6 footer-links">
-            <h4>ABOUT US</h4>
-            <ul>
-              <li>
-                {" "}
-                <a href="about.html">About WealthRight</a>
-              </li>
-              <li>
-                {" "}
-                <a href="ourpresence.html">Our Global Presence</a>
-              </li>
-            </ul>
-          </div>
-          <div className="col-lg-2 col-md-6 footer-links">
-            <h4>PARTNER WITH US</h4>
-          </div>
-          <div className="col-lg-3 col-md-6 footer-links">
-            <h4>OUR PRODUCTS</h4>
-            <ul>
-              <li>
-                {" "}
-                <a href="#">Life Insurance</a>
-              </li>
-              <li>
-                {" "}
-                <a href="#">Health Insurance</a>
-              </li>
-              <li>
-                {" "}
-                <a href="#">Motor &amp; Travel Insurance</a>
-              </li>
-              <li>
-                {" "}
-                <a href="#">Mutual Funds</a>
-              </li>
-              <li>
-                {" "}
-                <a href="#">Fixed Deposits</a>
-              </li>
-            </ul>
-          </div>
-          <div className="col-lg-3 col-md-6 footer-links">
-            <h4>CONTACT US</h4>
-            <p>
-              <strong>Registered &amp; Corporate Office</strong>
-              <br />
-              1701 B, 17th floor,
-              <br />
-              One International Centre,
-              <br />
-              Senapati Bapat Marg, Prabhadevi west,
-              <br />
-              Mumbai, 400013
-              <br />
-            </p>
-          </div>
-          <div className="col-lg-2 col-md-6 footer-links">
-            <p>
-              <img src="images/footer_logo.svg" alt="" />
-            </p>
-            <p>
-              &nbsp;&nbsp;
-              <a href="#">
-                <img src="images/linkdedin.png" alt="" />
-              </a>
-              &nbsp;&nbsp;&nbsp;
-              <a href="#">
-                <img src="images/instagram.png" alt="" />
-              </a>
-              &nbsp;&nbsp;&nbsp;
-              <a href="#">
-                <img src="images/youtube.png" alt="" />
-              </a>
-              &nbsp;&nbsp;&nbsp;
-              <a href="#">
-                <img src="images/twittwer.png" alt="" />
-              </a>
-              &nbsp;&nbsp;&nbsp;
-              <a href="#">
-                <img src="images/facebook.png" alt="" />
-              </a>
-            </p>
-          </div>
-          <div className="col-lg-12 col-md-6 footer-links text-center fs-6">
-            <p>
-              BEWARE OF SPURIOUS PHONE CALLS AND FICTIOUS / FRAUDULENT OFFERS
-              <br />
-              IRDAI is not involved in activities like selling insurance
-              policies, announcing bonus or investment of premiums. Public
-              receiving such phone calls are requested to lodge a police
-              complaint.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div className="container">
-      <div className="me-md-auto text-md-start ">
-        <div className="copyright fs-5">
-          © 2023 FiDENTIALInsurance Broker Private Limited. All Rights Reserved
-          <span>
-            {" "}
-            <a href="#">Privacy Policy</a>&nbsp;&nbsp;{" "}
-            <a href="#"> Terms of Use</a>
-          </span>
-        </div>
-        <div className="credits">&nbsp;</div>
-      </div>
-    </div>
-  </footer>
-  {/* End Footer */}
   <a
     href="#"
     className="back-to-top d-flex align-items-center justify-content-center"
