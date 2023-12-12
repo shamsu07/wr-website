@@ -4,6 +4,7 @@ import Life from "./components/life/life";
 import MotorTravel from "./components/motor/motor";
 import Mutual from "./components/mutual/mutual";
 
+import "./products.module.css";
 
 export default function Products() {
   return (
@@ -64,7 +65,6 @@ export default function Products() {
                     PRODUCTS
                   </h3>
                 </div>
-                {/* End .content*/}
               </div>
             </div>
           </div>

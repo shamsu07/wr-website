@@ -1,9 +1,8 @@
 import Link from "next/link";
-import Image from 'next/image';
-import commitedSuccess from '../public/images/home/committed-to-success.svg';
-import helpingAchieve from '../public/images/home/helping-achieve.svg';
-import rightSolution from '../public/images/home/right-solutions.svg';
-
+import Image from "next/image";
+import commitedSuccess from "../public/images/home/committed-to-success.svg";
+import helpingAchieve from "../public/images/home/helping-achieve.svg";
+import rightSolution from "../public/images/home/right-solutions.svg";
 
 export default function Home() {
   return (
@@ -55,10 +54,7 @@ export default function Home() {
         rel="stylesheet"
         type="text/css"
       />
-      {/* ======= Top Bar ======= */}
 
-      {/* ======= Hero Section ======= */}
-      {/* End Hero */}
       <main id="main">
         <section id="pricing" className="pricing">
           <div className="container">
@@ -94,7 +90,10 @@ export default function Home() {
               <div className="col-lg-8 col-md-6 mt-4 mt-lg-0" dir="ltr">
                 <div className="box1" data-aos="fade-left">
                   <div className="home_box">
-                    <Image src={helpingAchieve} alt="Illustration of financial growth." />
+                    <Image
+                      src={helpingAchieve}
+                      alt="Illustration of financial growth."
+                    />
                   </div>
                 </div>
               </div>
@@ -107,7 +106,10 @@ export default function Home() {
               <div className="col-lg-8 col-md-6 mt-4 mt-lg-0">
                 <div className="box1" data-aos="fade-right">
                   <div className="home_box">
-                    <Image src={rightSolution} alt="Illustration of people solving a puzzle." />
+                    <Image
+                      src={rightSolution}
+                      alt="Illustration of people solving a puzzle."
+                    />
                   </div>
                 </div>
               </div>
@@ -177,14 +179,16 @@ export default function Home() {
               <div className="col-lg-8 col-md-6 mt-4 mt-lg-0">
                 <div className="box1" data-aos="fade-left">
                   <div className="home_box">
-                    <Image src={commitedSuccess} alt="Illustration of two people shaking hands." />
+                    <Image
+                      src={commitedSuccess}
+                      alt="Illustration of two people shaking hands."
+                    />
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        {/* End Cta Section */}
       </main>
       {/* End #main */}
 
