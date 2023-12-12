@@ -2,9 +2,7 @@ import Fixed from "./components/fixed/fixed";
 import Health from "./components/health/health";
 import Life from "./components/life/life";
 import MotorTravel from "./components/motor/motor";
-import Motor from "./components/motor/motor";
 import Mutual from "./components/mutual/mutual";
-import Image from "next/image";
 
 
 export default function Products() {
