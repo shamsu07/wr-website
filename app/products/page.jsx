@@ -1,8 +1,8 @@
-import Fixed from "./components/fixed/fixed";
-import Health from "./components/health/health";
-import Life from "./components/life/life";
-import MotorTravel from "./components/motor/motor";
-import Mutual from "./components/mutual/mutual";
+import Fixed from "./components/fixed";
+import Health from "./components/health";
+import Life from "./components/life";
+import MotorTravel from "./components/motor";
+import Mutual from "./components/mutual";
 
 import "./products.module.css";
 

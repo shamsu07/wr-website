@@ -1,7 +1,7 @@
 import React from "react";
 import Link from 'next/link';
 import Image from 'next/image';
-import headerLogo from '../../../public/images/header/header-logo.svg'
+import headerLogo from '../../public/images/header/header-logo.svg'
 
 import styles from './header.module.css';
 

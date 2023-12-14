@@ -1,5 +1,5 @@
 import Image from "next/image";
-import fixedDeposit from "../../../../public/images/products/fixed/fixed-deposit.svg";
+import fixedDeposit from "../../../public/images/products/fixed/fixed-deposit.svg";
 
 export default function Fixed() {
     return(

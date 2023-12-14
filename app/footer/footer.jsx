@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import footerLogo from "../../../public/images/footer/footer-logo.svg";
+import footerLogo from "../../public/images/footer/footer-logo.svg";
 
 import styles from "./footer.module.css";
 
