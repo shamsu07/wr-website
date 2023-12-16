@@ -1,5 +1,5 @@
 import Image from "next/image";
-import healthInsurance from "../../../../public/images/products/health/health-insurance.svg";
+import healthInsurance from "../../../public/images/products/health/health-insurance.svg";
 
 
 export default function Health() {

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import mutualFund from '../../../../public/images/products/mutual/mutual-funds.svg';
+import mutualFund from "../../../public/images/products/mutual/mutual-funds.svg";
 export default function Mutual() {
   return (
     <>

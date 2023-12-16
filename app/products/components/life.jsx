@@ -1,5 +1,5 @@
 import Image from "next/image";
-import lifeInsurance from "../../../../public/images/products/life/life-insurance.svg";
+import lifeInsurance from "../../../public/images/products/life/life-insurance.svg";
 
 export default function Life() {
   return (

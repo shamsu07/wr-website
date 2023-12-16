@@ -1,5 +1,5 @@
 import Image from "next/image";
-import motorTravelInsurance from "../../../../public/images/products/motor/motor-and-travel-insurance.svg";
+import motorTravelInsurance from "../../../public/images/products/motor/motor-and-travel-insurance.svg";
 
 export default function MotorTravel() {
   return (
