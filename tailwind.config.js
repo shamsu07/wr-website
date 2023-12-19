@@ -16,13 +16,14 @@ module.exports = withMT({
       colors: {
         black: "#000000",
         white: "#FFFFFF",
-        darkGunmetal: "#212529", //Background black in the header
+        darkGunmetal: "#09161C", //Background black 
         spiroDiscoBall: "#1CC7F4", //Used in the title(eg. Contact US)
         bondiBlue: "#009CC5", //Used for container background
         blueSapphire: "#0A5F75", //Used for the footer
         opal: "#9CBEC8", //Used for texts in the footer
+        formBlack: '#1A2A30',
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailgrids/plugin")],
 });

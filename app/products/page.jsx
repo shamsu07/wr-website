@@ -1,66 +1,64 @@
-import Fixed from "./components/fixed";
-import Health from "./components/health";
-import Life from "./components/life";
-import MotorTravel from "./components/motor";
-import Mutual from "./components/mutual";
+import Image from "next/image";
+import ourProducts from "../../public/images/about/about-banner.svg";
+
+import {
+  ProductCard,
+  Life,
+  MutualFund,
+  Health,
+  MotorTravel,
+  FixedDeposit,
+} from "./products";
 
 export default function Products() {
   return (
-    <main id="main">
-      {/* ======= About Us Section ======= */}
-      <section id="about-us" className="about-us">
-        <div
-          className="col-xl-12 d-flex align-items-stretch justify-content-center justify-content-lg-start"
-          data-aos="fade-right"
-        >
-          <img alt="" />
+    <div className="bg-darkGunmetal">
+      <Image src={ourProducts} />
+      <div className="text-center py-8">
+        <h3 className="text-spiroDiscoBall text-2xl">
+          OUR
+          <br />
+          <span className="text-4xl font-semibold">PRODUCTS</span>
+        </h3>
+      </div>
+      {/* 
+      <div>
+        <p>
+          WealthRights is a trusted financial services &amp; solutions company,
+          dedicated to providing a wide range of financial products to meet your
+          diverse needs. Our commitment to excellence and customer-centric
+          approach has made us a preferred choice for individuals seeking robust
+          financial solutions. Our WealthRights products in Life Insurance,
+          Health Insurance, Motor Insurance, Mutual Funds, and Fixed Deposits,
+          each designed to empower you on your financial journey and meet your
+          financial goals.
+          <br />
+        </p>
+      </div> */}
+      <div className="flex flex-col gap-0">
+        <div className="flex-1">
+          <ProductCard />
         </div>
-        <div className="container">
-          <div className="row no-gutters">
-            <div className="col-xl-12 ps-0 ps-lg-5 pe-lg-1 ">
-              <div className="content text-center">
-                <h3 data-aos="fade-up">
-                  <span>OUR</span>
-                  <br />
-                  PRODUCTS
-                </h3>
-              </div>
-            </div>
+        <div className="flex flex-row gap-0">
+          <div className="basis-1/2">
+            <Life id="life" />
+          </div>
+          <div className="basis-1/2">
+            <Health id="health" />
           </div>
         </div>
-      </section>
-      {/* End About Us Section */}
-      <section id="testimonials" className="testimonials">
-        <div className="container">
-          <div className="row">
-            <div
-              className="col-lg-12 mb-3"
-              data-aos="fade-up"
-              data-aos-delay={300}
-            >
-              <div className="testimonial-item ">
-                <p>
-                  WealthRights is a trusted financial services &amp; solutions
-                  company, dedicated to providing a wide range of financial
-                  products to meet your diverse needs. Our commitment to
-                  excellence and customer-centric approach has made us a
-                  preferred choice for individuals seeking robust financial
-                  solutions. Our WealthRights products in Life Insurance, Health
-                  Insurance, Motor Insurance, Mutual Funds, and Fixed Deposits,
-                  each designed to empower you on your financial journey and
-                  meet your financial goals.
-                  <br />
-                </p>
-              </div>
-            </div>
-            <Life />
-            <Health />
-            <MotorTravel />
-            <Mutual />
-            <Fixed />
+        <div className="flex flex-row gap-0">
+          <div className="basis-1/2">
+            <MotorTravel id="motor-travel" />
+          </div>
+          <div className="basis-1/2">
+            <MutualFund id="mutual-fund" />
           </div>
         </div>
-      </section>
-    </main>
+        <div className="flex-1">
+          <FixedDeposit id="fixed-deposit" />
+        </div>
+      </div>
+    </div>
   );
 }
