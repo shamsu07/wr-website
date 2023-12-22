@@ -1,5 +1,8 @@
+"use client";
 import Image from "next/image";
 import aboutBanner from "../../public/images/about/about-banner.svg";
+import FadeIn from "../../components/Animation/FadeIn";
+
 import {
   GlobalCompany,
   OurPeople,
@@ -9,28 +12,30 @@ import {
 
 export default function About() {
   return (
-    <div className=" bg-darkGunmetal ">
-      <div className="">
-        <Image src={aboutBanner} />
-      </div>
+    <div>
+      <FadeIn>
+        <div class="flex justify-center items-center">
+          <Image src={aboutBanner} className="" />
+        </div>
 
-      <div className="text-center py-8">
-        <h3 className="text-spiroDiscoBall text-2xl">
-          ABOUT
-          <br />
-          <span className="text-4xl font-semibold">WealthRight</span>
-          <sup>™</sup>
-        </h3>
-      </div>
-      <div className="flex flex-wrap justify-center">
-        <GlobalCompany />
+        <div className="text-center py-8">
+          <h3 className="text-spiroDiscoBall text-2xl">
+            ABOUT
+            <br />
+            <span className="text-4xl font-semibold">WealthRight</span>
+            <sup>™</sup>
+          </h3>
+        </div>
+        <div className="flex flex-wrap justify-center">
+          <GlobalCompany />
 
-        <OurPeople />
+          <OurPeople />
 
-        <OurPractices />
+          <OurPractices />
 
-        <OurPlatform />
-      </div>
+          <OurPlatform />
+        </div>
+      </FadeIn>
     </div>
   );
 }

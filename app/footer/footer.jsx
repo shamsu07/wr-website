@@ -17,20 +17,20 @@ const Footer = () => {
               </h4>
               <ul>
                 <li>
-                  <a
-                    href="/#"
+                  <Link
+                    href="/about"
                     className="mb-2 inline-block text-sm text-opal hover:text-spiroDiscoBall"
                   >
                     About WealthRight
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/#"
+                  <Link
+                    href="/global"
                     className="mb-2 inline-block text-sm text-opal hover:text-spiroDiscoBall"
                   >
                     Our Global Presence
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -119,11 +119,7 @@ const Footer = () => {
           <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-4/12 xl:w-3/12">
             <div className="mb-10 w-full">
               <Link href="/" className="mb-6 inline-block max-w-[160px]">
-                <Image
-                  src={wrLogo}
-                  alt="logo"
-                  className="max-w-full"
-                />
+                <Image src={wrLogo} alt="logo" className="max-w-full" />
               </Link>
               <div className="-mx-3 flex items-center">
                 <a
@@ -198,7 +194,7 @@ const Footer = () => {
         </div>
         <p className="mb-9 text-xs text-center text-opal">
           <span className="">
-            BEWARE OF SPURIOUS PHONE CALLS AND FICTIOUS / FRAUDULENT OFFERS
+            BEWARE OF SPURIOUS PHONE CALLS AND FICTITIOUS / FRAUDULENT OFFERS
           </span>
           <br />
           IRDAI is not involved in activities like selling insurance policies,
@@ -213,37 +209,38 @@ const Footer = () => {
             <div className="w-full px-4 md:w-2/3 lg:w-1/2">
               <div className="my-1">
                 <div className="-mx-3 flex items-center justify-center md:justify-start">
-                  <a
-                    href="/#"
+                  <Link
+                    href="/legal/privacy"
                     className="px-3 text-base text-opal hover:text-spiroDiscoBall"
                   >
                     Privacy policy
-                  </a>
-                  <a
-                    href="/#"
+                  </Link>
+                  <Link
+                    href="/legal/disclaimer"
                     className="px-3 text-base text-opal hover:text-spiroDiscoBall"
                   >
-                    Legal notice
-                  </a>
-                  <a
-                    href="/#"
+                    Disclaimer
+                  </Link>
+                  <Link
+                    href="/legal/terms"
                     className="px-3 text-base text-opal hover:text-spiroDiscoBall"
                   >
-                    Terms of service
-                  </a>
+                    Terms & Conditions
+                  </Link>
                 </div>
               </div>
             </div>
             <div className="w-full px-4 md:w-1/3 lg:w-1/2">
               <div className="my-1 flex justify-center md:justify-end">
                 <p className="text-sm text-opal">
+                  © 2023
                   <a
                     href="https://www.fidential.in"
                     rel="nofollow noopner noreferrer"
                     target="_blank"
                     className="text-opal  hover:text-spiroDiscoBall"
                   >
-                    © 2023 FiDENTIALInsurance Broker Private Limited.
+                    &nbsp;FiDENTIAL Insurance Broker Private Limited.
                   </a>
                   &nbsp; All Rights Reserved
                 </p>

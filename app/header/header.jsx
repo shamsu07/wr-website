@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import wrLogo from "../../public/images/header/header-logo.svg"
+import wrLogo from "../../public/images/header/header-logo.svg";
 
 // import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
@@ -30,8 +30,8 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed left-0 top-0 z-99999 w-full py-2 bg-black text-white ${
-        stickyMenu ? "shadow transition duration-100" : ""
+      className={` left-0 top-0 z-99999 w-full py-2 bg-black text-white ${
+        stickyMenu ? "fixed shadow transition duration-100" : ""
       }`}
     >
       <div className="relative mx-auto max-w-c-1390 flex items-center justify-between px-4 md:px-8 xl:px-0">
@@ -100,32 +100,32 @@ const Header = () => {
                 <li key={key} className={menuItem.submenu && "group relative"}>
                   {menuItem.submenu ? (
                     <>
-                    <button
-                      onClick={() => setDropdownToggler(!dropdownToggler)}
-                      className="flex cursor-pointer items-center justify-between gap-3 hover:text-white"
-                    >
-                      {menuItem.title}
-                      <span>
-                        <svg
-                          className="h-3 w-3 cursor-pointer fill-waterloo group-hover:fill-white"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 512 512"
-                        >
-                          <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
-                        </svg>
-                      </span>
-                    </button>
+                      <button
+                        onClick={() => setDropdownToggler(!dropdownToggler)}
+                        className="flex cursor-pointer items-center justify-between gap-3 hover:text-white"
+                      >
+                        {menuItem.title}
+                        <span>
+                          <svg
+                            className="h-3 w-3 cursor-pointer fill-waterloo group-hover:fill-white"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                          >
+                            <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                          </svg>
+                        </span>
+                      </button>
 
-                    <ul
-                      className={`dropdown ${dropdownToggler ? "flex" : ""}`}
-                    >
-                      {menuItem.submenu.map((item, key) => (
-                        <li key={key} className="hover:text-white">
-                          <Link href={item.path || "#"}>{item.title}</Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </>
+                      <ul
+                        className={`dropdown ${dropdownToggler ? "flex" : ""}`}
+                      >
+                        {menuItem.submenu.map((item, key) => (
+                          <li key={key} className="hover:text-white">
+                            <Link href={item.path || "#"}>{item.title}</Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </>
                   ) : (
                     <Link
                       href={`${menuItem.path}`}
@@ -143,9 +143,7 @@ const Header = () => {
             </ul>
           </nav>
 
-          <div className="mt-7 flex items-center gap-6 xl:mt-0">
-            
-          </div>
+          <div className="mt-7 flex items-center gap-6 xl:mt-0"></div>
         </div>
       </div>
     </header>

@@ -7,8 +7,8 @@ import fixedDeposit from "../../public/images/products/fixed/fixed-deposit.svg";
 
 export const ProductCard = () => {
   return (
-    <div class="px-4 sm:px-8 md:px-16 lg:px-20 xl:px-32 2xl:px-40 py-3 sm:py-6 md:py-10 lg:py-12 xl:py-16">
-      <div class="bg-bondiBlue shadow-xl rounded-2xl mx-auto w-full md:w-70rem lg:w-70rem">
+    <div class="mr-40 ml-40 p-3">
+      <div class="bg-bondiBlue shadow-xl rounded-2xl mx-auto w-auto lg:max-w-[72.5rem]  ">
         <div class="text-white">
           <div class="space-y-4 p-6 md:p-8 lg:p-8 xl:p-10">
             <p class="text-sm leading-normal italic">
@@ -31,7 +31,7 @@ export const ProductCard = () => {
 export const Life = () => {
   return (
     <div className="p-3">
-      <div className="bg-bondiBlue shadow-xl rounded-2xl p-10  w-auto h-auto mx-auto xl:max-w-[35.5rem] xl:h-[20rem] md:ml-auto ">
+      <div className="bg-bondiBlue shadow-xl rounded-2xl p-10  w-auto h-auto ml-auto  xl:max-w-[35.5rem]  xl:h-[20rem] ">
         <div className="mx-auto max-w-md text-white text-left">
           <div className="flex flex-col sm:flex-row items-center justify-start">
             <Image src={lifeInsurance} width={90} />
@@ -58,8 +58,8 @@ export const Life = () => {
 
 export const Health = () => {
   return (
-    <div className="sm:p-3">
-      <div className="bg-bondiBlue shadow-xl  rounded-2xl p-10  w-auto h-auto xl:max-w-[35.5rem] xl:h-[20rem] xl:mr-auto sm: mx-auto">
+    <div className="p-3">
+      <div className="bg-bondiBlue shadow-xl  rounded-2xl p-10  w-auto h-auto mr-auto  xl:max-w-[35.5rem]  xl:h-[20rem] ">
         <div className="mx-auto max-w-md text-white text-left">
           <div className="flex flex-col sm:flex-row items-center justify-start">
             <Image src={healthInsurance} width={90} />
@@ -86,8 +86,8 @@ export const Health = () => {
 
 export const MutualFund = () => {
   return (
-    <div className="sm:p-3">
-      <div className="bg-bondiBlue shadow-xl  rounded-2xl p-10  w-auto h-auto xl:max-w-[35.5rem] xl:h-[20rem] xl:mr-auto sm: mx-auto">
+    <div className="p-3">
+      <div className="bg-bondiBlue shadow-xl  rounded-2xl p-10  w-auto h-auto mr-auto xl:max-w-[35.5rem] xl:h-[20rem] ">
         <div className="mx-auto max-w-md text-white text-left">
           <div className="flex flex-col sm:flex-row items-center justify-start">
             <Image src={mutualFund} width={90} />
@@ -114,8 +114,8 @@ export const MutualFund = () => {
 
 export const MotorTravel = () => {
   return (
-    <div className="sm:p-3">
-      <div className="bg-bondiBlue shadow-xl  rounded-2xl p-10  w-auto h-auto xl:max-w-[35.5rem] xl:h-[20rem] xl:ml-auto sm: mx-auto">
+    <div className="p-3">
+      <div className="bg-bondiBlue shadow-xl  rounded-2xl p-10  w-auto h-auto ml-auto xl:max-w-[35.5rem] xl:h-[20rem] ">
         <div className="mx-auto max-w-md text-white text-left">
           <div className="flex flex-col sm:flex-row items-center justify-start">
             <Image src={motorTravel} width={90} />
@@ -144,8 +144,8 @@ export const MotorTravel = () => {
 export const FixedDeposit = () => {
   return (
     <div className="mr-40 ml-40 sm:p-3">
-      <div className="bg-bondiBlue shadow-xl rounded-2xl p-10  w-auto h-auto xl:h-[20rem] sm: mx-auto">
-        <div className="mx-auto max-w-md text-white text-left">
+      <div className="bg-bondiBlue shadow-xl rounded-2xl mx-auto w-auto h-auto lg:max-w-[72.5rem] ">
+        <div className="mx-auto w-auto text-white text-left p-10">
           <div className="flex flex-col sm:flex-row items-center justify-start">
             <Image src={fixedDeposit} width={90} />
             <h3 className="pl-2 text-[26px] font-semibold sm:pl-4 mt-4 sm:mt-0">

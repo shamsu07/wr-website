@@ -6,11 +6,12 @@ import contactUs from "../../public/images/contact/contact-us-banner.svg";
 import { Router } from "next/router";
 import { ContactForm } from "./components/contactForm";
 import { Mumbai, Kolkata, Delaware, Amsterdam } from "./components/locations";
+import FadeIn from "../../components/Animation/FadeIn";
 
 export default function Contact() {
   return (
-    <section className=" overflow-hidden">
-      <div className="bg-darkGunmetal">
+    <div>
+      <FadeIn>
         <div class="flex justify-center items-center">
           <Image src={contactUs} className="" />
         </div>
@@ -31,7 +32,7 @@ export default function Contact() {
           <Delaware />
           <Amsterdam />
         </div>
-      </div>
-    </section>
+      </FadeIn>
+    </div>
   );
 }

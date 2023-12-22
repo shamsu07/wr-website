@@ -8,7 +8,7 @@ import ourPractices from "../../../public/images/about/our-practices.svg";
 export const GlobalCompany = () => {
   return (
     <div className="m-2 sm:p-3">
-      <div className="bg-bondiBlue shadow-xl mx-auto rounded-2xl p-10  w-auto h-auto xl:max-w-[35.5rem] xl:h-[20rem]  ">
+      <div className="bg-bondiBlue  shadow-xl mx-auto rounded-2xl p-10  w-auto h-auto xl:max-w-[35.5rem] xl:h-[20rem]  ">
         <div className="mx-auto max-w-md text-white text-left">
           <div className="flex flex-col sm:flex-row items-center justify-start">
             <Image src={globalCompany} width={90} />

@@ -3,20 +3,20 @@ import Header from "./header/header";
 import ScrollToTop from "./scrollToTop/scrollToTop";
 import "./globals.css";
 import "tailwindcss/tailwind.css";
-import {Mulish} from 'next/font/google'
+import { Mulish } from "next/font/google";
 
 const mulish = Mulish({
-  subsets:['vietnamese'],
-  display:'swap'
-})
+  subsets: ["vietnamese"],
+  display: "swap",
+});
 export default function RootLayout({ children }) {
   return (
     <html className={mulish.className}>
-      <body>
-        <Header/>
+      <body className="bg-darkGunmetal">
+        <Header />
         {children}
-        <Footer/>
-        <ScrollToTop/>
+        <Footer />
+        <ScrollToTop />
       </body>
     </html>
   );
