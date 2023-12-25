@@ -1,6 +1,6 @@
-import Footer from "./footer/footer";
-import Header from "./header/header";
-import ScrollToTop from "./scrollToTop/scrollToTop";
+import Footer from "../components/footer/footer";
+import Header from "../components/header/header";
+import ScrollToTop from "../components/scrollToTop/scrollToTop";
 import "./globals.css";
 import "tailwindcss/tailwind.css";
 import { Mulish } from "next/font/google";

@@ -2,13 +2,13 @@
 import { React } from "react";
 import Image from "next/image";
 import banner from "../../public/images/ourpresence/our-presence-banner.svg";
-import FadeIn from "../../components/Animation/FadeIn";
+import FadeIn from "../../components/animation/FadeIn";
 import {
   Mumbai,
   Kolkata,
   Amsterdam,
   Delaware,
-} from "../contact/components/locations";
+} from "../../components/contact/locations";
 
 export default function Partner() {
   return (

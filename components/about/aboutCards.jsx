@@ -1,15 +1,15 @@
 import React from "react";
 import Image from "next/image";
-import globalCompany from "../../../public/images/about/global-company.svg";
-import ourPeople from "../../../public/images/about/our-people.svg";
-import ourPlatform from "../../../public/images/about/our-platform.svg";
-import ourPractices from "../../../public/images/about/our-practices.svg";
+import globalCompany from "../../public/images/about/global-company.svg";
+import ourPeople from "../../public/images/about/our-people.svg";
+import ourPlatform from "../../public/images/about/our-platform.svg";
+import ourPractices from "../../public/images/about/our-practices.svg";
 
 export const GlobalCompany = () => {
   return (
     <div className="m-2 sm:p-3">
       <div className="bg-bondiBlue  shadow-xl mx-auto rounded-2xl p-10  w-auto h-auto xl:max-w-[35.5rem] xl:h-[20rem]  ">
-        <div className="mx-auto max-w-md text-white text-left">
+        <div className="mx-auto max-w-md text-white text-center md:text-left ">
           <div className="flex flex-col sm:flex-row items-center justify-start">
             <Image src={globalCompany} width={90} />
             <h3 className="text-xl pl-2 sm:pl-4 mt-4 sm:mt-0">
@@ -37,8 +37,8 @@ export const GlobalCompany = () => {
 export const OurPeople = () => {
   return (
     <div className="m-2 sm:p-3">
-      <div className="bg-bondiBlue shadow-xl mx-auto rounded-2xl p-10  w-auto h-auto xl:max-w-[35.5rem] xl:h-[20rem]  ">
-        <div className="mx-auto max-w-md text-white text-left">
+      <div className="bg-bondiBlue  shadow-xl mx-auto rounded-2xl p-10  w-auto h-auto xl:max-w-[35.5rem] xl:h-[20rem]  ">
+        <div className="mx-auto max-w-md text-white text-center md:text-left ">
           <div className="flex flex-col sm:flex-row items-center justify-start">
             <Image src={ourPeople} width={90} />
             <h3 className="text-xl pl-2 sm:pl-4 mt-4 sm:mt-0">
@@ -66,8 +66,8 @@ export const OurPeople = () => {
 export const OurPractices = () => {
   return (
     <div className="m-2 sm:p-3">
-      <div className="bg-bondiBlue shadow-xl mx-auto rounded-2xl p-10  w-auto h-auto xl:max-w-[35.5rem] xl:h-[20rem]  ">
-        <div className="mx-auto max-w-md text-white text-left">
+      <div className="bg-bondiBlue  shadow-xl mx-auto rounded-2xl p-10  w-auto h-auto xl:max-w-[35.5rem] xl:h-[20rem]  ">
+        <div className="mx-auto max-w-md text-white text-center md:text-left ">
           <div className="flex flex-col sm:flex-row items-center justify-start">
             <Image src={ourPractices} width={90} />
             <h3 className="text-xl pl-2 sm:pl-4 mt-4 sm:mt-0">
@@ -94,8 +94,8 @@ export const OurPractices = () => {
 export const OurPlatform = () => {
   return (
     <div className="m-2 sm:p-3">
-      <div className="bg-bondiBlue shadow-xl mx-auto rounded-2xl p-10  w-auto h-auto xl:max-w-[35.5rem] xl:h-[20rem]  ">
-        <div className="mx-auto max-w-md text-white text-left">
+      <div className="bg-bondiBlue  shadow-xl mx-auto rounded-2xl p-10  w-auto h-auto xl:max-w-[35.5rem] xl:h-[20rem]  ">
+        <div className="mx-auto max-w-md text-white text-center md:text-left ">
           <div className="flex flex-col sm:flex-row items-center justify-start">
             <Image src={ourPlatform} width={90} />
             <h3 className="text-xl pl-2 sm:pl-4 mt-4 sm:mt-0">

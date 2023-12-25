@@ -2,8 +2,8 @@
 
 import { React, useState } from "react";
 import { useForm } from "react-hook-form";
-import { sendContactEmail } from "../../../utils/sendContactEmail";
-import { storeContactToDB } from "../../../utils/storeContact";
+import { sendContactEmail } from "../../utils/sendContactEmail";
+import { storeContactToDB } from "../../utils/storeContact";
 
 export const ContactForm = () => {
   const {

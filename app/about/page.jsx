@@ -1,14 +1,14 @@
 "use client";
 import Image from "next/image";
 import aboutBanner from "../../public/images/about/about-banner.svg";
-import FadeIn from "../../components/Animation/FadeIn";
+import FadeIn from "../../components/animation/FadeIn";
 
 import {
   GlobalCompany,
   OurPeople,
   OurPractices,
   OurPlatform,
-} from "./components/aboutCards";
+} from "../../components/about/aboutCards";
 
 export default function About() {
   return (

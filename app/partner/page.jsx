@@ -3,8 +3,8 @@
 import { React, useState } from "react";
 import Image from "next/image";
 import partnerWithUs from "../../public/images/partner/partner-with-us-banner.svg";
-import { PartnerForm } from "./components/partnerForm";
-import FadeIn from "../../components/Animation/FadeIn";
+import { PartnerForm } from "../../components/parnter/partnerForm";
+import FadeIn from "../../components/animation/FadeIn";
 
 export default function Partner() {
   return (

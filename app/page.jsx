@@ -1,23 +1,23 @@
-"use client"
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import commitedSuccess from "../public/images/home/committed-to-success.svg";
 import helpingAchieve from "../public/images/home/helping-achieve.svg";
 import rightSolution from "../public/images/home/right-solutions.svg";
-import FadeIn from "../components/Animation/FadeIn";
+import FadeIn from "../components/animation/FadeIn";
 
 export default function Home() {
   return (
     <div>
       <FadeIn>
-        <div className=" flex flex-col lg:grid lg:grid-cols-1  lg:gap-8">
+        <div className=" flex flex-col xl:grid xl:grid-cols-1  xl:gap-8 ">
           {/* First Row */}
-          <div className="flex flex-col gap-4 lg:flex-row items-center">
-            <div className="px-20 mx-auto">
-              <h6 className="mb-2 text-spiroDiscoBall text-4xl font-medium text-left ">
+          <div className="flex flex-col gap-4 xl:flex-row items-center xl:p-10 py-10">
+            <div className="xl:px-20 px-5 mx-auto text-center xl:text-left">
+              <h6 className="mb-2 text-spiroDiscoBall text-4xl font-medium  ">
                 Helping you <br /> achieve your <br /> dreams
               </h6>
-              <span className="text-white text-sm text-left ">
+              <span className="text-white text-sm  ">
                 In this ever-changing world, we are your expert companions in
                 shaping your financial future. We combine global best practices
                 with deep local knowledge to help you achieve your dreams - your
@@ -26,27 +26,12 @@ export default function Home() {
                 to your aspirations. Start today and let us navigate your
                 journey to a secure and prosperous tomorrow.
               </span>
-              <div className="mt-6 text-center">
+              <div className="my-6">
                 <Link
                   href="/contact"
-                  className="flex items-center gap-2 text-white hover:text-spiroDiscoBall hover:text-lg"
+                  className="bg-transparent hover:bg-spiroDiscoBall text-white font-medium hover:text-darkGunmetal py-2 px-4 border border-white hover:border-transparent rounded-3xl"
                 >
                   Get Started
-                  <svg
-                    className="w-6 h-6 hover:w-7 hover:h-7"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 14 10"
-                  >
-                    <path
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M1 5h12m0 0L9 1m4 4L9 9"
-                    />
-                  </svg>
                 </Link>
               </div>
             </div>
@@ -59,14 +44,14 @@ export default function Home() {
           </div>
 
           {/* Second Row */}
-          <div className="flex flex-col gap-4 lg:flex-row items-center">
+          <div className="flex flex-col gap-4 xl:flex-row items-center xl:p-10 py-10 bg-maastrichtBlue">
             <Image
               src={rightSolution}
               width={710}
               alt="Illustration of people solving a puzzle."
               className="mb-4"
             />
-            <div className="text-left px-20 mx-auto">
+            <div className="xl:px-20 px-5 mx-auto text-center xl:text-left">
               <h6 className="mb-2 text-spiroDiscoBall text-4xl font-medium">
                 Right <br />
                 solutions <br />
@@ -80,35 +65,20 @@ export default function Home() {
                 bring you unmatched value, providing the best options,
                 personalized just for you.
               </span>
-              <div className="mt-4">
+              <div className="my-6">
                 <Link
                   href="/contact"
-                  className="flex items-center gap-2 text-white hover:text-spiroDiscoBall"
+                  className="bg-transparent hover:bg-spiroDiscoBall text-white font-medium hover:text-darkGunmetal py-2 px-4 border border-white hover:border-transparent rounded-3xl"
                 >
                   Get Started
-                  <svg
-                    className="w-6 h-6 hover:w-7 hover:h-7"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 14 10"
-                  >
-                    <path
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M1 5h12m0 0L9 1m4 4L9 9"
-                    />
-                  </svg>
                 </Link>
               </div>
             </div>
           </div>
 
           {/* Third Row */}
-          <div className="flex flex-col gap-4 lg:flex-row items-center">
-            <div className="text-left px-20 mx-auto">
+          <div className="flex flex-col gap-4 xl:flex-row items-center xl:p-10 py-10">
+            <div className="xl:px-20 px-5 mx-auto text-center xl:text-left">
               <h6 className="mb-2 text-spiroDiscoBall text-4xl font-medium">
                 Committed <br />
                 to your <br />
@@ -121,27 +91,12 @@ export default function Home() {
                 over coffee, video, or a phone call. We work hard every day to
                 make things easy for you, so you focus on chasing your dreams.
               </span>
-              <div className="mt-4">
+              <div className="my-6">
                 <Link
                   href="/contact"
-                  className="flex items-center gap-2 text-white hover:text-spiroDiscoBall"
+                  className="bg-transparent hover:bg-spiroDiscoBall text-white font-medium hover:text-darkGunmetal py-2 px-4 border border-white hover:border-transparent rounded-3xl"
                 >
                   Get Started
-                  <svg
-                    className="w-6 h-6 hover:w-7 hover:h-7"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 14 10"
-                  >
-                    <path
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M1 5h12m0 0L9 1m4 4L9 9"
-                    />
-                  </svg>
                 </Link>
               </div>
             </div>

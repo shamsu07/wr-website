@@ -22,6 +22,7 @@ module.exports = withMT({
         blueSapphire: "#0A5F75", //Used for the footer
         opal: "#9CBEC8", //Used for texts in the footer
         formBlack: '#1A2A30',
+        maastrichtBlue: '#072E3A'
       },
     },
   },

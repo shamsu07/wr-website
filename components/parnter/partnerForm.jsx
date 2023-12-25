@@ -2,8 +2,8 @@
 
 import { React, useState } from "react";
 import { useForm } from "react-hook-form";
-import { sendPartnerEmail } from "../../../utils/sendPartnerEmail";
-import { storePartnerToDB } from "../../../utils/storePartner";
+import { sendPartnerEmail } from "../../utils/sendPartnerEmail";
+import { storePartnerToDB } from "../../utils/storePartner";
 
 export const PartnerForm = () => {
   const { register, handleSubmit } = useForm();
