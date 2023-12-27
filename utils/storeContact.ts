@@ -18,6 +18,6 @@ export function storeContactToDB(data: ContactUsData) {
       console.log(response.message);
     })
     .catch((err) => {
-      alert(err);
+      console.log(err);
     });
 }

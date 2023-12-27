@@ -6,7 +6,7 @@ export async function POST(request: NextRequest) {
     const { name, mobile, email, location, dob, eduQual } = await request.json();
 
     const transport = nodemailer.createTransport({
-        service: 'gmail',
+        service: 'outlook',
         /* 
           setting service as 'gmail' is same as providing these setings:
           host: "smtp.gmail.com",
@@ -50,7 +50,7 @@ export async function POST(request: NextRequest) {
 
     try {
         await sendMailPromise();
-        return NextResponse.json({ message: 'Email sent' });
+        return NextResponse.json({ message: 'Partner Details Sent' });
     } catch (err) {
         return NextResponse.json({ error: err }, { status: 500 });
     }

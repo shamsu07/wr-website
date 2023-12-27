@@ -60,7 +60,7 @@ const Footer = () => {
               <ul>
                 <li>
                   <Link
-                    href="/products/#life"
+                    href="/products/#product-card"
                     className="mb-2 inline-block text-sm text-opal hover:text-spiroDiscoBall"
                   >
                     Life Insurance
@@ -68,7 +68,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/products/#health"
+                    href="/products/#product-card"
                     className="mb-2 inline-block text-sm text-opal hover:text-spiroDiscoBall"
                   >
                     Health Insurance
@@ -76,23 +76,23 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/products/#motor-travel"
+                    href="/products/#health"
                     className="mb-2 inline-block text-sm text-opal hover:text-spiroDiscoBall"
                   >
                     Motor & Travel Insurance
                   </Link>
                 </li>
                 <li>
-                  <a
-                    href="/products/#mutual-fund"
+                  <Link
+                    href="/products/#health"
                     className="mb-2 inline-block text-sm text-opal hover:text-spiroDiscoBall"
                   >
                     Mutual Funds
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <Link
-                    href="/products/#fixed-deposit"
+                    href="/products/#mutual-fund"
                     className="mb-2 inline-block text-sm text-opal hover:text-spiroDiscoBall"
                   >
                     Fixed Deposits
@@ -125,7 +125,7 @@ const Footer = () => {
                 <Link
                   aria-label="social link"
                   href="/#"
-                  className="px-3 text-white hover:text-spiroDiscoBall"
+                  className="px-3 text-white hover:text-facebookBlue"
                 >
                   <svg
                     width="22"
@@ -141,7 +141,7 @@ const Footer = () => {
                 <Link
                   aria-label="social link"
                   href="/#"
-                  className="px-3 text-white hover:text-spiroDiscoBall"
+                  className="px-3 text-white hover:text-twitterBlue"
                 >
                   <svg
                     width="22"
@@ -157,7 +157,7 @@ const Footer = () => {
                 <Link
                   aria-label="social link"
                   href="/#"
-                  className="px-3 text-white hover:text-spiroDiscoBall"
+                  className="px-3 text-white hover:text-instagramPink"
                 >
                   <svg
                     width="22"
@@ -175,7 +175,7 @@ const Footer = () => {
                 <Link
                   aria-label="social link"
                   href="https://www.linkedin.com/company/wealth-right-global/"
-                  className="px-3 text-white hover:text-spiroDiscoBall"
+                  className="px-3 text-white hover:text-linkedinBlue"
                   target="_blank"
                 >
                   <svg

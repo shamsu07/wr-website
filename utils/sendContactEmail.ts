@@ -15,7 +15,7 @@ export function sendContactEmail(data: ContactUsData) {
   })
     .then((res) => res.json())
     .then((response) => {
-      console.log(response.message);
+      alert(response.message);
     })
     .catch((err) => {
       alert(err);

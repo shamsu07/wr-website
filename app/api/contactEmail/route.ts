@@ -6,9 +6,10 @@ export async function POST(request: NextRequest) {
   const { name, mobile, email, subject, details } = await request.json();
 
   const transport = nodemailer.createTransport({
-    host: "smtp.your-email-provider.com", // Update this with your email provider's SMTP server
-    port: 587, // Update this with your email provider's port
-    secure: false,  
+    // host: "smtp-mail.outlook.com",
+    // port: 587,
+    // secure: false,
+    service: "Outlook365",
     /* 
       setting service as 'gmail' is same as providing these setings:
       host: "smtp.gmail.com",
@@ -22,14 +23,17 @@ export async function POST(request: NextRequest) {
       user: process.env.EMAIL,
       pass: process.env.PASSWORD,
     },
+    // tls: {
+    //   ciphers: "SSLv3",
+    // },
   });
 
   const mailOptions: Mail.Options = {
     from: process.env.EMAIL,
     to: process.env.EMAIL,
-    // cc: email, (uncomment this line if you want to send a copy to the sender)
     subject: `Message from ${name} (${email})`,
     text: `
+    ${name} wanted to contact with us!!!
     name: ${name}
     mobile: ${mobile}
     email: ${email}
@@ -51,7 +55,7 @@ export async function POST(request: NextRequest) {
 
   try {
     await sendMailPromise();
-    return NextResponse.json({ message: "Email sent" });
+    return NextResponse.json({ message: "Contact Details Sent" });
   } catch (err) {
     return NextResponse.json({ error: err }, { status: 500 });
   }
