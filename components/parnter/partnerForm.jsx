@@ -4,6 +4,7 @@ import { React, useState } from "react";
 import { useForm } from "react-hook-form";
 import { sendPartnerEmail } from "../../utils/sendPartnerEmail";
 import { storePartnerToDB } from "../../utils/storePartner";
+import SuccessModal from "../modal/successModal";
 
 export const PartnerForm = () => {
   const {
@@ -23,6 +24,7 @@ export const PartnerForm = () => {
   });
 
   const [loading, setLoading] = useState(false);
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
 
   const handleClear = () => {
     reset();
@@ -30,15 +32,16 @@ export const PartnerForm = () => {
 
   async function onSubmit(data) {
     try {
+      console.log(`BEFORE: ${showSuccessModal}`)
       setLoading(true);
       await storePartnerToDB(data);
       await sendPartnerEmail(data);
-      alert("Message Sent!!");
       reset();
-      setFieldsFilled(false);
+      setShowSuccessModal(true);
     } catch (error) {
       console.log("ERROR WHILE SUBMITTING", error);
     } finally {
+      console.log(`AFTER: ${showSuccessModal}`)
       setLoading(false);
     }
   }
@@ -170,9 +173,9 @@ export const PartnerForm = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="bg-blueSapphire flex justify-center items-center w-full text-white px-4 py-3 rounded-md focus:outline-none hover:bg-bondiBlue"
+                  className="bg-blueSapphire flex justify-center items-center w-full text-white px-4 py-3 rounded-md focus:outline-none hover:bg-bondiBlue disabled:bg-formBlack"
                 >
-                  {isSubmitting ? (
+                  {loading ? (
                     <svg
                       aria-hidden="true"
                       className="w-6 h-6 text-gray-200 animate-spin  fill-black"
@@ -193,6 +196,12 @@ export const PartnerForm = () => {
                     "Submit"
                   )}
                 </button>
+                {showSuccessModal && (
+                  <SuccessModal
+                    showModal={showSuccessModal}
+                    setShowModal={setShowSuccessModal}
+                  />
+                )}
               </div>
             </div>
           </form>
@@ -201,59 +210,3 @@ export const PartnerForm = () => {
     </div>
   );
 };
-
-// <form onSubmit={handleSubmit(onSubmit)}>
-//   <div className="mb-5">
-//     <label htmlFor="name">Full Name</label>
-//     <input
-//       type="text"
-//       placeholder="Full Name"
-//       {...register("name", { required: true })}
-//     />
-//   </div>
-//   <div className="mb-5">
-//     <label htmlFor="mobile">Mobile</label>
-//     <input
-//       type="text"
-//       placeholder="example@domain.com"
-//       {...register("mobile", { required: true })}
-//     />
-//   </div>
-//   <div className="mb-5">
-//     <label htmlFor="email">Email Address</label>
-//     <input
-//       type="email"
-//       placeholder="example@domain.com"
-//       {...register("email", { required: true })}
-//     />
-//   </div>
-//   <div className="mb-5">
-//     <label htmlFor="location">Location</label>
-//     <input
-//       type="text"
-//       placeholder="example@domain.com"
-//       {...register("location", { required: true })}
-//     />
-//   </div>
-//   <div className="mb-5">
-//     <label htmlFor="dob">DOB</label>
-//     <input
-//       type="text"
-//       placeholder="example@domain.com"
-//       {...register("dob", { required: true })}
-//     />
-//   </div>
-//   <div className="mb-5">
-//     <label htmlFor="eduQual">Educational Qual.</label>
-//     <input
-//       type="text"
-//       placeholder="example@domain.com"
-//       {...register("eduQual", { required: true })}
-//     />
-//   </div>
-//   <div>
-//     <button className="hover:shadow-form rounded-md bg-purple-500 py-3 px-8 text-base font-semibold text-white outline-none">
-//       Submit
-//     </button>
-//   </div>
-// </form>

@@ -7,7 +7,6 @@ import { Mulish } from "next/font/google";
 
 import "./globals.css";
 import "tailwindcss/tailwind.css";
-import next from "next";
 
 const mulish = Mulish({
   subsets: ["vietnamese"],
@@ -160,7 +159,7 @@ export const metadata = {
     },
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: "/icon.svg",
   },
   manifest: "https://www.wealth-right.com/manifest.json",
 };

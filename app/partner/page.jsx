@@ -6,5 +6,5 @@ export const metadata = {
 };
 
 export default function PartnerPage() {
-  return <Partner />;
+  return <Partner/>;
 }

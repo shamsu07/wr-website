@@ -6,7 +6,6 @@ import helpingAchieve from "../../public/images/home/helping-achieve.svg";
 import rightSolution from "../../public/images/home/right-solutions.svg";
 import FadeIn from "../animation/FadeIn";
 
-
 export default function Home() {
   return (
     <div>
@@ -18,7 +17,7 @@ export default function Home() {
               <h6 className="mb-2 text-spiroDiscoBall text-4xl font-medium  ">
                 Helping you <br /> achieve your <br /> dreams
               </h6>
-              <span className="text-white text-sm  ">
+              <span className="text-white text-base  ">
                 In this ever-changing world, we are your expert companions in
                 shaping your financial future. We combine global best practices
                 with deep local knowledge to help you achieve your dreams - your
@@ -30,7 +29,7 @@ export default function Home() {
               <div className="my-6">
                 <Link
                   href="/contact"
-                  className="bg-transparent hover:bg-spiroDiscoBall text-white font-medium hover:text-darkGunmetal py-2 px-4 border border-white hover:border-transparent rounded-3xl"
+                  className="bg-bondiBlue hover:bg-spiroDiscoBall text-white font-medium hover:text-darkGunmetal py-2 px-4  hover:border-transparent rounded-3xl"
                 >
                   Get Started
                 </Link>
@@ -59,7 +58,7 @@ export default function Home() {
                 tailored to <br />
                 your needs
               </h6>
-              <span className="text-white text-sm">
+              <span className="text-white text-base">
                 Your Dreams, Our Commitment: Ensuring the right solutions
                 tailored to your needs with the best value to achieve your
                 goals. At every step, your interests come first. Our agents
@@ -69,7 +68,7 @@ export default function Home() {
               <div className="my-6">
                 <Link
                   href="/contact"
-                  className="bg-transparent hover:bg-spiroDiscoBall text-white font-medium hover:text-darkGunmetal py-2 px-4 border border-white hover:border-transparent rounded-3xl"
+                  className="bg-bondiBlue hover:bg-spiroDiscoBall text-white font-medium hover:text-darkGunmetal py-2 px-4  hover:border-transparent rounded-3xl"
                 >
                   Get Started
                 </Link>
@@ -85,7 +84,7 @@ export default function Home() {
                 to your <br />
                 success
               </h6>
-              <span className="text-white text-sm">
+              <span className="text-white text-base">
                 Our agents are your neighbors in the community, committed to
                 your success throughout your financial journey. We are a trusted
                 full-service firm that stands ready, with you at every step -
@@ -95,7 +94,7 @@ export default function Home() {
               <div className="my-6">
                 <Link
                   href="/contact"
-                  className="bg-transparent hover:bg-spiroDiscoBall text-white font-medium hover:text-darkGunmetal py-2 px-4 border border-white hover:border-transparent rounded-3xl"
+                  className="bg-bondiBlue hover:bg-spiroDiscoBall text-white font-medium hover:text-darkGunmetal py-2 px-4  hover:border-transparent rounded-3xl"
                 >
                   Get Started
                 </Link>
@@ -113,5 +112,3 @@ export default function Home() {
     </div>
   );
 }
-
-

@@ -4,6 +4,7 @@ import { React, useState } from "react";
 import { useForm } from "react-hook-form";
 import { sendContactEmail } from "../../utils/sendContactEmail";
 import { storeContactToDB } from "../../utils/storeContact";
+import SuccessModal from "../modal/successModal";
 
 export const ContactForm = () => {
   const {
@@ -15,23 +16,26 @@ export const ContactForm = () => {
     defaultValues: { name: "", mobile: "", mail: "", subject: "", details: "" },
   });
 
+  const [loading, setLoading] = useState(false);
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
+
   const handleClear = () => {
     reset();
   };
+
   async function onSubmit(data) {
     try {
-      // Adding a 3-second delay using setTimeout
-      await new Promise((resolve) => setTimeout(resolve, 3000));
-
+      setLoading(true);
+      setTimeout(() => {
+      }, 2000)
       await storeContactToDB(data);
       await sendContactEmail(data);
-      alert("Message Sent!!");
       reset();
-      setFieldsFilled(false);
+      setShowSuccessModal(true);
     } catch (error) {
       console.log("ERROR WHILE SUBMITTING", error);
     } finally {
-      console.log("Submission success");
+      setLoading(false);
     }
   }
 
@@ -146,9 +150,9 @@ export const ContactForm = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="bg-blueSapphire flex justify-center items-center w-full text-white px-4 py-3 rounded-md focus:outline-none hover:bg-bondiBlue"
+                  className="bg-blueSapphire flex justify-center items-center w-full text-white px-4 py-3 rounded-md focus:outline-none hover:bg-bondiBlue disabled:bg-formBlack"
                 >
-                  {isSubmitting ? (
+                  {loading ? (
                     <svg
                       aria-hidden="true"
                       className="w-6 h-6 text-gray-200 animate-spin  fill-black"
@@ -169,6 +173,7 @@ export const ContactForm = () => {
                     "Submit"
                   )}
                 </button>
+                {showSuccessModal && <SuccessModal showModal={showSuccessModal} setShowModal={setShowSuccessModal}/>}
               </div>
             </div>
           </form>

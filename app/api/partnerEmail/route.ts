@@ -6,7 +6,7 @@ export async function POST(request: NextRequest) {
     const { name, mobile, email, location, dob, eduQual } = await request.json();
 
     const transport = nodemailer.createTransport({
-        service: 'outlook',
+        service: 'gmail',
         /* 
           setting service as 'gmail' is same as providing these setings:
           host: "smtp.gmail.com",
@@ -17,21 +17,21 @@ export async function POST(request: NextRequest) {
           https://github.com/nodemailer/nodemailer/blob/master/lib/well-known/services.json
       */
         auth: {
-            user: process.env.EMAIL,
-            pass: process.env.PASSWORD,
+            user: process.env.SENDER_EMAIL,
+            pass: process.env.SENDER_PASSWORD,
         },
     });
 
     const mailOptions: Mail.Options = {
-        from: process.env.EMAIL,
-        to: process.env.EMAIL,
+        from: process.env.SENDER_EMAIL,
+        to: process.env.RECEIVER_EMAIL,
         // cc: email, (uncomment this line if you want to send a copy to the sender)
         subject: `${name} wants to Partner with us!!!`,
         text: `
-    name: ${name}
-    mobile: ${mobile}
-    email: ${email}
-    location: ${location}
+    Name: ${name}
+    Mobile: ${mobile}
+    Email: ${email}
+    Location: ${location}
     Date of Birth: ${dob}
     Highest Educational Qualification: ${eduQual}
     `,
