@@ -1,5 +1,7 @@
-env: standard
-runtime: nodejs18
+env: flex
+runtime: nodejs
+runtime_config:
+  operating_system: ubuntu22
 handlers:
   - url: /.*y
     secure: always
