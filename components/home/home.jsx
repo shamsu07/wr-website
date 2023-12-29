@@ -21,7 +21,7 @@ export default function Home() {
                 In this ever-changing world, we are your expert companions in
                 shaping your financial future. We combine global best practices
                 with deep local knowledge to help you achieve your dreams - your
-                child's education, your dream home, and your comfortable
+                child&apos;s education, your dream home, and your comfortable
                 retirement. Our advanced Financial Needs Analysis is a pathway
                 to your aspirations. Start today and let us navigate your
                 journey to a secure and prosperous tomorrow.
