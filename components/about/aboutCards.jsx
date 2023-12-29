@@ -79,7 +79,7 @@ export const OurPractices = () => {
           <div className="space-y-0 py-2 text-[15px] leading-normal italic">
             <p>
               Our commitment to clients shows in our unyielding advocacy and
-              personalized service through our agents. WealthRight's Prescribed
+              personalized service through our agents. WealthRight&apos;s Prescribed
               Practices set the rhythm for all our Associates, ensuring
               excellence in sales and service, and resulting in a consistent
               client experience

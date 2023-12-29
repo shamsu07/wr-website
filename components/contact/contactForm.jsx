@@ -26,8 +26,7 @@ export const ContactForm = () => {
   async function onSubmit(data) {
     try {
       setLoading(true);
-      setTimeout(() => {
-      }, 2000)
+      setTimeout(() => {}, 2000);
       await storeContactToDB(data);
       await sendContactEmail(data);
       reset();
@@ -59,7 +58,7 @@ export const ContactForm = () => {
             <div class="block pl-2 font-semibold text-xl self-start text-white">
               <h2 class="leading-relaxed">Write To Us</h2>
               <p class="text-sm text-gray-300 font-normal leading-relaxed">
-                Building financial security, one client at a time. Let's talk.
+                Building financial security, one client at a time. Let&apos;s talk.
               </p>
             </div>
           </div>
@@ -173,7 +172,12 @@ export const ContactForm = () => {
                     "Submit"
                   )}
                 </button>
-                {showSuccessModal && <SuccessModal showModal={showSuccessModal} setShowModal={setShowSuccessModal}/>}
+                {showSuccessModal && (
+                  <SuccessModal
+                    showModal={showSuccessModal}
+                    setShowModal={setShowSuccessModal}
+                  />
+                )}
               </div>
             </div>
           </form>

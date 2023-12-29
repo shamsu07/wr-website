@@ -73,7 +73,7 @@ export const Health = () => {
               comprehensive healthcare coverage. Our plans offer peace of mind
               by ensuring you and your family have access to topnotch medical
               services when you need them most. With flexible options designed
-              to fit your lifestyle, we're committed to safeguarding your
+              to fit your lifestyle, we&apos;re committed to safeguarding your
               well-being. Choose WealthRights Health Insurance for a healthier,
               happier life.
             </p>
@@ -99,7 +99,7 @@ export const MutualFund = () => {
             <p>
               WealthRights Mutual Fund products offer diversified and secure
               investment opportunities, tailored to your financial goals and
-              risk tolerance. Whether you're saving for retirement, a major
+              risk tolerance. Whether you&apos;re saving for retirement, a major
               purchase, or simply growing your wealth, our expertly managed
               portfolios help you achieve your financial dreams with confidence.
               Invest wisely and watch your wealth grow with WealthRights Mutual
@@ -128,8 +128,8 @@ export const MotorTravel = () => {
               WealthRights Motor &amp; Travel Insurance products are your
               trusted companions on the road and beyond. With our comprehensive
               coverage, you can enjoy worry-free travels and protect your
-              vehicles from unforeseen mishaps. Whether you're planning a road
-              trip or commuting daily, we've got you covered with flexible
+              vehicles from unforeseen mishaps. Whether you&apos;re planning a road
+              trip or commuting daily, we&apos;ve got you covered with flexible
               policies that cater to your specific needs. Travel with confidence
               and drive with peace of mind with WealthRights Motor &amp; Travel
               Insurance.
@@ -156,7 +156,7 @@ export const FixedDeposit = () => {
             <p>
               WealthRights Fixed Deposit products offer secure, competitive
               savings options with flexible terms. Invest confidently for your
-              financial goals, whether it's education, emergencies, or future
+              financial goals, whether it&apos;s education, emergencies, or future
               expenses, and enjoy the peace of mind of guaranteed returns. Start
               today for a stable financial future.
             </p>
