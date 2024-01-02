@@ -1,5 +1,8 @@
 env: flex
 runtime: nodejs
+network:
+  name: projects/prj-uat-host/global/networks/vpc-uat-shared-host-01
+  subnetwork_name: sb-uat-as1-srv-wr-02
 runtime_config:
   operating_system: ubuntu22
 handlers:
