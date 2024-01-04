@@ -15,14 +15,14 @@ export default function Global() {
     <div>
       <FadeIn>
         <div className="text-center ">
-          <h3 className="text-spiroDiscoBall text-2xl py-6">
+          <h1 className="text-spiroDiscoBall text-2xl py-6">
             OUR
             <br />
             <span className="text-4xl font-semibold">PRESENCE</span>
-          </h3>
+          </h1>
         </div>
         <div class="flex justify-center items-center">
-          <Image src={banner} className="" />
+          <Image src={banner} className="" alt="Image demonstrating WealthRights presence"/>
         </div>
         <div className="mx-4 flex flex-wrap justify-center px-8 mt-8">
           <Mumbai />

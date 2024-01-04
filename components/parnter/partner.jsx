@@ -12,15 +12,15 @@ export default function Partner() {
       
       <FadeIn>
         <div class="flex justify-center items-center">
-          <Image src={partnerWithUs} className="" />
+          <Image src={partnerWithUs} className="" alt=""/>
         </div>
 
         <div className="text-center ">
-          <h3 className="text-spiroDiscoBall text-2xl py-6">
+          <h1 className="text-spiroDiscoBall text-2xl py-6">
             PARTNER
             <br />
             <span className="text-4xl font-semibold">WITH US</span>
-          </h3>
+          </h1>
           <p className="text-white py-4 px-2 lg:px-20">
             Benefits of becoming a financial solutions provider or agent manager
             with WealthRight: WealthRight will empower you to offer Meaningful

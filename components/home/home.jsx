@@ -10,21 +10,28 @@ export default function Home() {
   return (
     <div>
       <FadeIn>
+        {/* <div className="text-center py-8">
+          <h1 className="text-spiroDiscoBall text-2xl">
+            Welcome To
+            <br />
+            <span className="text-4xl font-semibold">WealthRight</span>
+          </h1>
+        </div> */}
         <div className=" flex flex-col xl:grid xl:grid-cols-1  xl:gap-8 ">
           {/* First Row */}
           <div className="flex flex-col gap-4 xl:flex-row items-center xl:p-10 py-10">
             <div className="xl:px-20 px-5 mx-auto text-center xl:text-left">
-              <h6 className="mb-2 text-spiroDiscoBall text-4xl font-medium  ">
+              <h2 className="mb-2 text-spiroDiscoBall text-4xl font-medium  ">
                 Helping you <br /> achieve your <br /> dreams
-              </h6>
+              </h2>
               <span className="text-white text-base  ">
-                In this ever-changing world, we are your expert companions in
-                shaping your financial future. We combine global best practices
-                with deep local knowledge to help you achieve your dreams - your
-                child&apos;s education, your dream home, and your comfortable
-                retirement. Our advanced Financial Needs Analysis is a pathway
-                to your aspirations. Start today and let us navigate your
-                journey to a secure and prosperous tomorrow.
+                In this ever-changing world, wealthright is your expert
+                companion in shaping your financial future. We combine global
+                best practices with deep local knowledge to help you achieve
+                your dreams - your child&apos;s education, your dream home, and
+                your comfortable retirement. Our advanced Financial Needs
+                Analysis is a pathway to your aspirations. Start today and let
+                us navigate your journey to a secure and prosperous tomorrow.
               </span>
               <div className="my-6">
                 <Link
@@ -52,18 +59,18 @@ export default function Home() {
               className="mb-4"
             />
             <div className="xl:px-20 px-5 mx-auto text-center xl:text-left">
-              <h6 className="mb-2 text-spiroDiscoBall text-4xl font-medium">
+              <h2 className="mb-2 text-spiroDiscoBall text-4xl font-medium">
                 Right <br />
                 solutions <br />
                 tailored to <br />
                 your needs
-              </h6>
+              </h2>
               <span className="text-white text-base">
                 Your Dreams, Our Commitment: Ensuring the right solutions
                 tailored to your needs with the best value to achieve your
-                goals. At every step, your interests come first. Our agents
-                bring you unmatched value, providing the best options,
-                personalized just for you.
+                goals. At every step, your interests come first.
+                wealthright&apos;s agents bring you unmatched value, providing
+                the best options, personalized just for you.
               </span>
               <div className="my-6">
                 <Link
@@ -79,17 +86,18 @@ export default function Home() {
           {/* Third Row */}
           <div className="flex flex-col gap-4 xl:flex-row items-center xl:p-10 py-10">
             <div className="xl:px-20 px-5 mx-auto text-center xl:text-left">
-              <h6 className="mb-2 text-spiroDiscoBall text-4xl font-medium">
+              <h2 className="mb-2 text-spiroDiscoBall text-4xl font-medium">
                 Committed <br />
                 to your <br />
                 success
-              </h6>
+              </h2>
               <span className="text-white text-base">
-                Our agents are your neighbors in the community, committed to
-                your success throughout your financial journey. We are a trusted
-                full-service firm that stands ready, with you at every step -
-                over coffee, video, or a phone call. We work hard every day to
-                make things easy for you, so you focus on chasing your dreams.
+                wealthright&apos;s agents are your neighbors in the community,
+                committed to your success throughout your financial journey. We
+                are a trusted full-service firm that stands ready, with you at
+                every step - over coffee, video, or a phone call. We work hard
+                every day to make things easy for you, so you focus on chasing
+                your dreams.
               </span>
               <div className="my-6">
                 <Link

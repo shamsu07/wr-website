@@ -11,12 +11,12 @@ export const GlobalCompany = () => {
       <div className="bg-bondiBlue  shadow-xl mx-auto rounded-2xl p-10  w-auto h-auto xl:max-w-[35.5rem] xl:h-[20rem]  ">
         <div className="mx-auto max-w-md text-white text-center md:text-left ">
           <div className="flex flex-col sm:flex-row items-center justify-start">
-            <Image src={globalCompany} width={90} />
-            <h3 className="text-xl pl-2 sm:pl-4 mt-4 sm:mt-0">
+            <Image src={globalCompany} width={90} alt=""/>
+            <h2 className="text-xl pl-2 sm:pl-4 mt-4 sm:mt-0">
               <span className="text-[26px] font-semibold">Global company</span>
               <br />
               fulfilling financial dreams
-            </h3>
+            </h2>
           </div>
           <div className="space-y-0 py-2 text-[15px] leading-normal italic">
             <p>
@@ -40,12 +40,12 @@ export const OurPeople = () => {
       <div className="bg-bondiBlue  shadow-xl mx-auto rounded-2xl p-10  w-auto h-auto xl:max-w-[35.5rem] xl:h-[20rem]  ">
         <div className="mx-auto max-w-md text-white text-center md:text-left ">
           <div className="flex flex-col sm:flex-row items-center justify-start">
-            <Image src={ourPeople} width={90} />
-            <h3 className="text-xl pl-2 sm:pl-4 mt-4 sm:mt-0">
+            <Image src={ourPeople} width={90} alt=""/>
+            <h2 className="text-xl pl-2 sm:pl-4 mt-4 sm:mt-0">
               <span className="text-[26px] font-semibold">Our people</span>
               <br />
               are our key to understand clients needs
-            </h3>
+            </h2>
           </div>
           <div className="space-y-0 py-2 text-[15px] leading-normal italic">
             <p>
@@ -69,12 +69,12 @@ export const OurPractices = () => {
       <div className="bg-bondiBlue  shadow-xl mx-auto rounded-2xl p-10  w-auto h-auto xl:max-w-[35.5rem] xl:h-[20rem]  ">
         <div className="mx-auto max-w-md text-white text-center md:text-left ">
           <div className="flex flex-col sm:flex-row items-center justify-start">
-            <Image src={ourPractices} width={90} />
-            <h3 className="text-xl pl-2 sm:pl-4 mt-4 sm:mt-0">
+            <Image src={ourPractices} width={90} alt="" />
+            <h2 className="text-xl pl-2 sm:pl-4 mt-4 sm:mt-0">
               <span className="text-[26px] font-semibold">Our practices</span>
               <br />
               help us deliver on our promise
-            </h3>
+            </h2>
           </div>
           <div className="space-y-0 py-2 text-[15px] leading-normal italic">
             <p>
@@ -97,12 +97,12 @@ export const OurPlatform = () => {
       <div className="bg-bondiBlue  shadow-xl mx-auto rounded-2xl p-10  w-auto h-auto xl:max-w-[35.5rem] xl:h-[20rem]  ">
         <div className="mx-auto max-w-md text-white text-center md:text-left ">
           <div className="flex flex-col sm:flex-row items-center justify-start">
-            <Image src={ourPlatform} width={90} />
-            <h3 className="text-xl pl-2 sm:pl-4 mt-4 sm:mt-0">
+            <Image src={ourPlatform} width={90} alt=""/>
+            <h2 className="text-xl pl-2 sm:pl-4 mt-4 sm:mt-0">
               <span className="text-[26px] font-semibold">Our platform</span>
               <br />
               brings world class capabilities to bear
-            </h3>
+            </h2>
           </div>
           <div className="space-y-0 py-2 text-[15px] leading-normal italic">
             <p>

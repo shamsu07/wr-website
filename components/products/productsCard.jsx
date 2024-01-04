@@ -34,10 +34,10 @@ export const Life = () => {
       <div className="bg-bondiBlue shadow-xl rounded-2xl p-10  w-auto h-auto ml-auto  xl:max-w-[35.5rem]  xl:h-[20rem] ">
         <div className="mx-auto max-w-md text-white text-center md:text-left">
           <div className="flex flex-col sm:flex-row items-center justify-start">
-            <Image src={lifeInsurance} width={90} />
-            <h3 className="pl-2 text-[26px] font-semibold sm:pl-4 mt-4 sm:mt-0">
+            <Image src={lifeInsurance} width={90} alt=""/>
+            <h2 className="pl-2 text-[26px] font-semibold sm:pl-4 mt-4 sm:mt-0">
               Life Insurance
-            </h3>
+            </h2>
           </div>
           <div className="space-y-0 py-2 text-[15px] leading-normal italic">
             <p>
@@ -62,10 +62,10 @@ export const Health = () => {
       <div className="bg-bondiBlue shadow-xl  rounded-2xl p-10  w-auto h-auto mr-auto  xl:max-w-[35.5rem]  xl:h-[20rem] ">
         <div className="mx-auto max-w-md text-white text-center md:text-left">
           <div className="flex flex-col sm:flex-row items-center justify-start">
-            <Image src={healthInsurance} width={90} />
-            <h3 className="pl-2 text-[26px] font-semibold sm:pl-4 mt-4 sm:mt-0">
+            <Image src={healthInsurance} width={90} alt=""/>
+            <h2 className="pl-2 text-[26px] font-semibold sm:pl-4 mt-4 sm:mt-0">
               Health Insurance
-            </h3>
+            </h2>
           </div>
           <div className="space-y-0 py-2 text-[15px] leading-normal italic">
             <p>
@@ -90,10 +90,10 @@ export const MutualFund = () => {
       <div className="bg-bondiBlue shadow-xl  rounded-2xl p-10  w-auto h-auto mr-auto xl:max-w-[35.5rem] xl:h-[20rem] ">
         <div className="mx-auto max-w-md text-white text-center md:text-left">
           <div className="flex flex-col sm:flex-row items-center justify-start">
-            <Image src={mutualFund} width={90} />
-            <h3 className="pl-2 text-[26px] font-semibold sm:pl-4 mt-4 sm:mt-0">
+            <Image src={mutualFund} width={90} alt=""/>
+            <h2 className="pl-2 text-[26px] font-semibold sm:pl-4 mt-4 sm:mt-0">
               Mutual Funds
-            </h3>
+            </h2>
           </div>
           <div className="space-y-0 py-2 text-[15px] leading-normal italic">
             <p>
@@ -118,10 +118,10 @@ export const MotorTravel = () => {
       <div className="bg-bondiBlue shadow-xl  rounded-2xl p-10  w-auto h-auto ml-auto xl:max-w-[35.5rem] xl:h-[20rem] ">
         <div className="mx-auto max-w-md text-white text-center md:text-left">
           <div className="flex flex-col sm:flex-row items-center justify-start">
-            <Image src={motorTravel} width={90} />
-            <h3 className="pl-2 text-[26px] font-semibold sm:pl-4 mt-4 sm:mt-0">
+            <Image src={motorTravel} width={90} alt=""/>
+            <h2 className="pl-2 text-[26px] font-semibold sm:pl-4 mt-4 sm:mt-0">
               Motor &amp; Travel Insurance
-            </h3>
+            </h2>
           </div>
           <div className="space-y-0 py-2 text-[15px] leading-normal italic">
             <p>
@@ -147,10 +147,10 @@ export const FixedDeposit = () => {
       <div className="bg-bondiBlue shadow-xl rounded-2xl mx-auto w-auto lg:max-w-[72.5rem] ">
         <div className=" text-white text-center md:text-left p-10">
           <div className="flex flex-col sm:flex-row items-center justify-start">
-            <Image src={fixedDeposit} width={90} />
-            <h3 className="pl-2 text-[26px] font-semibold sm:pl-4 mt-4 sm:mt-0">
+            <Image src={fixedDeposit} width={90} alt=""/>
+            <h2 className="pl-2 text-[26px] font-semibold sm:pl-4 mt-4 sm:mt-0">
               Fixed Deposits
-            </h3>
+            </h2>
           </div>
           <div className="space-y-0 py-2 text-[15px] leading-normal italic">
             <p>

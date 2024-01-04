@@ -15,16 +15,16 @@ export default function About() {
     <div>
       <FadeIn>
         <div class="flex justify-center items-center">
-          <Image src={aboutBanner} className="" />
+          <Image src={aboutBanner} className="" alt="WealthRight About Banner" />
         </div>
 
         <div className="text-center py-8">
-          <h3 className="text-spiroDiscoBall text-2xl">
+          <h1 className="text-spiroDiscoBall text-2xl">
             ABOUT
             <br />
             <span className="text-4xl font-semibold">WealthRight</span>
             <sup>™</sup>
-          </h3>
+          </h1>
         </div>
         <div className="flex flex-wrap justify-center">
           <GlobalCompany />

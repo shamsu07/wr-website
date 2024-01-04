@@ -17,14 +17,14 @@ export default function Products() {
     <div>
       <FadeIn>
         <div class="flex justify-center items-center">
-          <Image src={ourProducts} className="" />
+          <Image src={ourProducts} className="" alt=""/>
         </div>
         <div className="text-center py-8">
-          <h3 className="text-spiroDiscoBall text-2xl">
+          <h1 className="text-spiroDiscoBall text-2xl">
             OUR
             <br />
             <span className="text-4xl font-semibold">PRODUCTS</span>
-          </h3>
+          </h1>
         </div>
 
         <div className="flex flex-col mx-auto mb-8">

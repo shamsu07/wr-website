@@ -4,7 +4,6 @@ import Spacer from "../components/spacer/spacer";
 import ScrollToTop from "../components/scrollToTop/scrollToTop";
 import { Mulish } from "next/font/google";
 
-
 import "./globals.css";
 import "tailwindcss/tailwind.css";
 
@@ -13,10 +12,24 @@ const mulish = Mulish({
   display: "swap",
 });
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FinancialService",
+  name: "WealthRight",
+  url: "https://www.wealthright.com",
+  logo: "https://www.wealthright.com/icon.svg",
+  description:
+    "WealthRight: Your path to financial success through personalized guidance and expert agents.",
+};
+
 export default function RootLayout({ children }) {
   return (
-    <html className={mulish.className}>
+    <html className={mulish.className} lang="en">
       <body className="bg-darkGunmetal">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <Header />
         <Spacer />
         {children}
@@ -28,6 +41,8 @@ export default function RootLayout({ children }) {
 }
 
 export const metadata = {
+  description:
+    "WealthRight: Your path to financial success through personalized guidance and expert agents.",
   metadataBase: new URL("https://www.wealth-right.com"),
   title: {
     template: "%s | WealthRight",
@@ -41,6 +56,13 @@ export const metadata = {
   applicationName: "WealthRight Website",
   referrer: "origin-when-cross-origin",
   keywords: [
+    "WealthRight",
+    "wealth-right",
+    "Wealth-right",
+    "wealth right",
+    "Right wealth",
+    "Wealth",
+    "Wealth Right",
     // General
     "financial broker services",
     "best financial broker",
@@ -160,6 +182,7 @@ export const metadata = {
   },
   icons: {
     icon: "/icon.svg",
+    apple: "/icon.svg",
   },
   manifest: "https://www.wealth-right.com/manifest.json",
 };
@@ -167,6 +190,5 @@ export const metadata = {
 export const viewport = {
   width: "device-width",
   initialScale: 1,
-  maximumScale: 1,
   colorScheme: "dark",
 };

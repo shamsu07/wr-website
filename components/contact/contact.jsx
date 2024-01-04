@@ -12,15 +12,15 @@ export default function Contact() {
     <div>
       <FadeIn>
         <div class="flex justify-center items-center">
-          <Image src={contactUs} className="" />
+          <Image src={contactUs} className="" alt="Contact Banner"/>
         </div>
 
         <div className="text-center py-8">
-          <h3 className="text-spiroDiscoBall text-2xl">
+          <h1 className="text-spiroDiscoBall text-2xl">
             CONTACT
             <br />
             <span className="text-4xl font-semibold">US</span>
-          </h3>
+          </h1>
         </div>
 
         <ContactForm />

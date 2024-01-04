@@ -1,11 +1,11 @@
-env: flex
 runtime: nodejs
+env: flex
+runtime_config:
+  operating_system: ubuntu22
 network:
   name: projects/prj-uat-host/global/networks/vpc-uat-shared-host-01
   subnetwork_name: sb-uat-as1-srv-wr-02
-runtime_config:
-  operating_system: ubuntu22
 handlers:
   - url: /.*y
-    secure: always
     script: auto
+    secure: always
