@@ -9,7 +9,7 @@ export async function POST(request: NextRequest) {
     // host: "smtp-mail.outlook.com",
     // port: 587,
     // secure: false,
-    service: "Outlook365",
+    service: "gmail",
     /* 
       setting service as 'gmail' is same as providing these setings:
       host: "smtp.gmail.com",

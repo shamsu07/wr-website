@@ -24,6 +24,8 @@ model PostPartnerWithUs {
   name     String
   mobile   String
   email    String
+  // role     String
+  // pincode  Int
   location String
   dob      String
   eduQual  String

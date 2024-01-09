@@ -2,6 +2,8 @@ type PartnerWithUsData = {
     name: string;
     mobile: string;
     email: string;
+    // role: string;
+    // pincode: number;
     location: string;
     dob: string;
     eduQual: string;

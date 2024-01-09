@@ -4,6 +4,7 @@ import Spacer from "../components/spacer/spacer";
 import ScrollToTop from "../components/scrollToTop/scrollToTop";
 import { Mulish } from "next/font/google";
 
+import Script from "next/script";
 import "./globals.css";
 import "tailwindcss/tailwind.css";
 
@@ -26,7 +27,8 @@ export default function RootLayout({ children }) {
   return (
     <html className={mulish.className} lang="en">
       <body className="bg-darkGunmetal">
-        <script
+        <Script
+          id="jsonLd"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
@@ -41,20 +43,18 @@ export default function RootLayout({ children }) {
 }
 
 export const metadata = {
-  description:
-    "WealthRight: Your path to financial success through personalized guidance and expert agents.",
-  metadataBase: new URL("https://www.wealth-right.com"),
   title: {
     template: "%s | WealthRight",
     default: "WealthRight",
   },
+  metadataBase: new URL("https://www.wealth-right.com"),
   category: "Finance",
   alternates: {
     canonical: "/",
   },
   generator: "Next.js",
   applicationName: "WealthRight Website",
-  referrer: "origin-when-cross-origin",
+  // referrer: "origin-when-crossorigin",
   keywords: [
     "WealthRight",
     "wealth-right",
@@ -159,8 +159,6 @@ export const metadata = {
     images: [
       {
         url: "https://www.wealth-right.com/logo.svg",
-        width: 800,
-        height: 600,
         alt: "WealthRight Logo",
       },
     ],

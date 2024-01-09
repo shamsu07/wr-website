@@ -1,4 +1,4 @@
-import Partner from "../../components/parnter/partner";
+import Partner from "../../components/partner/partner";
 
 export const metadata = {
   title: "Partner With Us",

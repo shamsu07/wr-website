@@ -4,7 +4,7 @@ export const metadata = {
   title: {
     absolute: "Home | WealthRight"
   },
-  description: "",
+  description: "WealthRight: Your path to financial success through personalized guidance and expert agents.",
 };
 
 export default function HomePage() {

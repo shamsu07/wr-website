@@ -43,13 +43,16 @@ export default function Header() {
           </Link>
         </div>
         <div className="flex lg:hidden">
-          {setMobileMenuOpen && <button
-            type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
-            onClick={() => setMobileMenuOpen(true)}
-          >
-            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
-          </button>}
+          {setMobileMenuOpen && (
+            <button
+              title="header button"
+              type="button"
+              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
+              onClick={() => setMobileMenuOpen(true)}
+            >
+              <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+            </button>
+          )}
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
           <Link
@@ -92,6 +95,7 @@ export default function Header() {
               <Image className="w-3/4" src={wrLogo} alt="Wealth Right Logo" />
             </Link>
             <button
+              title="header button"
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-white"
               onClick={() => setMobileMenuOpen(false)}

@@ -2,6 +2,8 @@ type PartnerWithUsData = {
     name: string;
     mobile: string;
     email: string;
+    // role: string;
+    // pincode: number;
     location: string;
     dob: string;
     eduQual: string;
@@ -9,7 +11,7 @@ type PartnerWithUsData = {
   
   export function storePartnerToDB(data: PartnerWithUsData) {
     const apiEndpoint = "/api/partner";
-  
+    console.log(`DATA: ${JSON.stringify(data)}`);
     fetch(apiEndpoint, {
       method: "POST",
       body: JSON.stringify(data),

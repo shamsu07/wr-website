@@ -27,6 +27,8 @@ module.exports = withMT({
         twitterBlue: "#1DA1F2",
         facebookBlue: "#1877F2",
         instagramPink: "#D62976",
+        buttonBlue: "#003F4F",
+        errorRed: "#A90107"
       },
     },
   },
